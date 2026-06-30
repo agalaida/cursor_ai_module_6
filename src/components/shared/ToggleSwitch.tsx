@@ -14,7 +14,7 @@ export function ToggleSwitch({ checked, onChange, label, id }: ToggleSwitchProps
         <input
           id={switchId}
           type="checkbox"
-          className="sr-only"
+          className="absolute opacity-0 w-full h-full top-0 left-0 cursor-pointer m-0"
           checked={checked}
           onChange={(e) => onChange(e.target.checked)}
           aria-label={label}
