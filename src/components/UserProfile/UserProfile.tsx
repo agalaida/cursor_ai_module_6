@@ -14,11 +14,9 @@ export function UserProfile({ user }: UserProfileProps) {
   const [followerCount, setFollowerCount] = useState(user.followers);
 
   function handleFollow() {
-    setFollowing((prev) => {
-      const next = !prev;
-      setFollowerCount((c) => c + (next ? 1 : -1));
-      return next;
-    });
+    const next = !following;
+    setFollowing(next);
+    setFollowerCount((c) => c + (next ? 1 : -1));
   }
 
   return (
