@@ -13,7 +13,7 @@ A React dashboard app built with Vite, TypeScript, and Tailwind CSS. Includes a 
 
 ## Setup
 
-**Requirements:** Node.js 18+
+**Requirements:** Node.js ^20.19.0 or >=22.12.0 (required by Vite 8 / oxlint)
 
 ```bash
 # Install dependencies
